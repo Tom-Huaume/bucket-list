@@ -1,13 +1,18 @@
-<!doctype html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=yes, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bucket</title>
-</head>
-<body>
-    <h1>Liste des choses à faire avant de mourir</h1>
-</body>
-</html>
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Ce qu'il vous reste à faire : </h1>
+    <ol>
+        <li>Aller à Los Angeles</li>
+        <li>Faire du saut en parachute</li>
+        <li>Aller en Louisiane</li>
+        <li>Visiter Moscou</li>
+        <li>Visiter Saint-Petersbourg</li>
+    </ol>
+
+    <button>Ajouter une réalisation</button>
+{% endblock %}
+
+{% block title %}
+    My Bucket-List
+{% endblock %}
