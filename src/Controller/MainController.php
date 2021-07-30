@@ -24,4 +24,12 @@ class MainController extends AbstractController
     {
         return $this->render('main/idea.html.twig');
     }
+
+    /**
+     * @Route("/about", name="main_about")
+     */
+    public function about()
+    {
+        return $this->render('main/about.html.twig');
+    }
 }
